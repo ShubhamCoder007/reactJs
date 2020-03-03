@@ -13,10 +13,18 @@ class ParentComp extends Component{
     }
 
     componentDidMount(){
+        
         setInterval(() => {
-            this.setState({
-                name: 'Shubham' + this.state.name
-            })
+            if(this.state.name == 'Shubham'){
+                this.setState({
+                    name: 'Shubham Banerjee'
+                })
+            }
+            else{
+                this.setState({
+                    name: 'Shubham'
+                })
+            }
         }, 2000)
     }
     
