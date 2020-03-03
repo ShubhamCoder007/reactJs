@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
 import './components/Greet'
 import Greet from './components/Greet';
@@ -18,6 +18,9 @@ import styles from './appStyles.module.css'
 import Form from './components/Form';
 
 import LifecycleA from './components/LifecycleA'
+import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table'
+import ParentComp from './components/ParentComp';
 
 function App() {
   return (
@@ -55,11 +58,15 @@ function App() {
      {/* <h1 className='error'>Error</h1>
      <h1 className={styles.success}>Success</h1> */}
 
-     <Form/>
+     {/* <Form/>
 
-     <LifecycleA/>
+     <LifecycleA/> */}
+
+     {/* <FragmentDemo/> */}
   
+     {/* <Table/> */}
 
+     <ParentComp/>
 
     </div>
   );
