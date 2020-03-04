@@ -22,6 +22,9 @@ import FragmentDemo from './components/FragmentDemo'
 import Table from './components/Table'
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
+import ParentFRInput from './components/ParentFRInput';
+import Heroes from './components/Heroes';
+import ErrorBoundary from './components/ErrorBoundary'
 
 function App() {
   return (
@@ -69,7 +72,23 @@ function App() {
 
      {/* <ParentComp/> */}
 
-     <RefsDemo/>
+     {/* <RefsDemo/> */}
+
+     <br/><br/>
+
+     {/* <ParentFRInput/> */}
+
+     <ErrorBoundary>
+     <Heroes heroName='Goku'/>
+     </ErrorBoundary>
+
+     <ErrorBoundary>
+     <Heroes heroName='Vegeta'/>
+     </ErrorBoundary>
+
+     <ErrorBoundary>
+     <Heroes heroName='Joker'/>
+     </ErrorBoundary>
 
     </div>
   );
